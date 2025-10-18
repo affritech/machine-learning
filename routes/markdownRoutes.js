@@ -1,7 +1,7 @@
 import express from 'express';
 const router = express.Router();
 import { marked } from 'marked';
-import Markdown from '../models/Markdown';
+import Markdown from '../models/Markdown.js';
 
 // Configure marked options (optional)
 marked.setOptions({
