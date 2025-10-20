@@ -18,7 +18,7 @@ connectDB();
 
 // 1. CORS - Allow requests from React frontend
 app.use(cors({
-  origin: process.env.CLIENT_URL &&  'http://localhost:3000',
+  origin: process.env.CLIENT_URL || 'http://localhost:3000',
   credentials: true
 }));
 
